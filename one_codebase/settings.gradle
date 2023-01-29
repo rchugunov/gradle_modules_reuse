@@ -14,7 +14,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "TwoAppsOneCodebase"
 include ':app'
-include ':altclient'
+include ':cats_app'
 include ':feature_list'
 include ':feature_details'
 include ':domain'
