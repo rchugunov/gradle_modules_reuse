@@ -10,16 +10,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        mavenLocal()
     }
 }
 rootProject.name = "PrimaryCatsApp"
 include ':cats_app'
-
-include ':feature_list'
-project(':feature_list').projectDir = new File('../app_to_be_reused/feature_list')
-
-include ':feature_details'
-project(':feature_details').projectDir = new File('../app_to_be_reused/feature_details')
-
-include ':domain'
-project(':domain').projectDir = new File('../app_to_be_reused/domain')

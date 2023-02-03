@@ -12,8 +12,8 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "AppToBeReused"
+rootProject.name = "test"
 include ':dogs_app'
-include ':feature_list'
-include ':feature_details'
+include ':feature-list'
+include ':feature-details'
 include ':domain'

@@ -1,7 +1,11 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
 }
+
+group = "com.rchugunov"
+version = "1.0.0"
 
 android {
     namespace 'com.rchugunov.feature_list'
@@ -39,8 +43,8 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation project(':feature-details')
 
-    implementation project(":feature_details")
     implementation project(":domain")
 
     testImplementation 'junit:junit:4.13.2'
