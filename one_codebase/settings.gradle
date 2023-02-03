@@ -13,8 +13,8 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "TwoAppsOneCodebase"
-include ':dogs_app'
-include ':cats_app'
-include ':feature_list'
-include ':feature_details'
+include ':dogs-app'
+include ':cats-app'
+include ':feature-list'
+include ':feature-details'
 include ':domain'
