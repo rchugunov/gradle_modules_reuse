@@ -13,13 +13,13 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "PrimaryCatsApp"
-include ':cats_app'
+include ':cats-app'
 
-include ':feature_list'
-project(':feature_list').projectDir = new File('../app_to_be_reused/feature_list')
+include ':feature-list'
+project(':feature-list').projectDir = new File('../app_to_be_reused/feature-list')
 
-include ':feature_details'
-project(':feature_details').projectDir = new File('../app_to_be_reused/feature_details')
+include ':feature-details'
+project(':feature-details').projectDir = new File('../app_to_be_reused/feature-details')
 
 include ':domain'
 project(':domain').projectDir = new File('../app_to_be_reused/domain')

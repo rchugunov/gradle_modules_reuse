@@ -13,7 +13,7 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "test"
-include ':dogs_app'
+include ':dogs-app'
 include ':feature-list'
 include ':feature-details'
 include ':domain'

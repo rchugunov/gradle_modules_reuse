@@ -13,7 +13,7 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "AppToBeReused"
-include ':dogs_app'
-include ':feature_list'
-include ':feature_details'
+include ':dogs-app'
+include ':feature-list'
+include ':feature-details'
 include ':domain'
