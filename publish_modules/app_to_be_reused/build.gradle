@@ -17,20 +17,25 @@ subprojects {
     afterEvaluate {
         if (!plugins.hasPlugin("android")) {
 
-//            android {
-//                publishing {
-//                    multipleVariants {
-//                        allVariants()
-//                    }
-//                }
-//            }
+            if (plugins.hasPlugin("android-library")) {
+                android {
+                    publishing {
+                        multipleVariants {
+                            allVariants()
+                        }
+                    }
+                }
+            }
 
             publishing {
                 publications {
                     allVariants(MavenPublication) {
-//                        artifactId = "$rootProject.name-$project.name"
                         afterEvaluate {
-                            from components.default
+                            if (plugins.hasPlugin("java")) {
+                                from components.java
+                            } else if (plugins.hasPlugin("android-library")) {
+                                from components.default
+                            }
                         }
                     }
                 }
